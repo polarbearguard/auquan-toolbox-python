@@ -8,7 +8,10 @@ import datetime as dt
 from auquanToolbox.dataloader import load_data
 from auquanToolbox.resultviewer import loadgui
 from auquanToolbox.metrics import metrics, baseline
-import urllib2
+try:
+    from urllib2 import urlopen
+except ImportError:
+    from urllib.request import urlopen
 
 
 def backtest(exchange, markets, trading_strategy, date_start, date_end, lookback, budget=1000000, verbose=False, base_index='SPX', trading_costs=True, isJson=False):
