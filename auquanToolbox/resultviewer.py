@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import matplotlib
 matplotlib.use("TkAgg") # important to call this right after
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2TkAgg
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2Tk
 from matplotlib import style
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
